@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.quizapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/quiz"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Quiz1"></activity>
+        <activity android:name=".Quiz2"></activity>
+        <activity android:name=".Quiz3"></activity>
+        <activity android:name=".Quiz4"></activity>
+        <activity android:name=".Quiz5"></activity>
+        <activity android:name=".QuizFinal"></activity>
+        <activity android:name=".Instruction"></activity>
+    </application>
+
+</manifest>

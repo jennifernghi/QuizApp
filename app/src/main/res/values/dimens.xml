@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="container_margin">16dp</dimen>
+    <dimen name="container_padding">16dp</dimen>
+    <dimen name="logo_width">200dp</dimen>
+    <dimen name="logo_height">200dp</dimen>
+    <dimen name="dot_square_dimen">20dp</dimen>
+    <dimen name="dot_seperation">4dp</dimen>
+    <dimen name="default_padding">8dp</dimen>
+    <dimen name="default_margin">8dp</dimen>
+    <dimen name="checkbox_padding">4dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="avarta_layout">140dp</dimen>
+    <dimen name="avarta_img">120dp</dimen>
+    <dimen name="refresh_img">80dp</dimen>
+    <dimen name="toast_img">150dp</dimen>
+
+</resources>

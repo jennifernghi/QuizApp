@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScrollView"
+    android:background="@color/white"
+    tools:context="com.example.android.quizapp.QuizFinal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/container_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/avarta_layout"
+                android:layout_height="@dimen/avarta_layout"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/avarta_img"
+                    android:layout_height="@dimen/avarta_img"
+                    android:layout_marginRight="@dimen/default_padding"
+                    android:src="@drawable/avarta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_view_name"
+                    android:paddingRight="@dimen/container_padding"
+                    android:text="@string/name"
+                    style="@style/NameFinal"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:text="@string/score_header"
+                        style="@style/ScoreFinal"/>
+
+                    <TextView
+                        android:id="@+id/text_view_score"
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:text="@string/score"
+                        style="@style/ScoreFinal"/>
+
+                    <TextView
+                        android:layout_marginRight="@dimen/small_margin"
+                        android:text="@string/slash"
+                        style="@style/ScoreFinal"/>
+
+                    <TextView
+                        android:id="@+id/text_view_max_score"
+                        android:text="@string/empty_string"
+                        style="@style/ScoreFinal"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_marginTop="@dimen/container_margin"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_view_score_percent"
+                android:text="@string/score"
+                style="@style/PercentText" />
+
+            <TextView
+                android:text="@string/percent"
+                style="@style/PercentText"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|bottom">
+
+            <ImageView
+                android:layout_width="@dimen/refresh_img"
+                android:layout_height="@dimen/refresh_img"
+                android:onClick="sendIntent"
+                android:src="@drawable/refresh" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
